@@ -1,0 +1,30 @@
+{
+  "name": "forum_nodejs",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run clean && babel src -d target --watch",
+    "compile": "npm run clean && babel src -d target",
+    "clean":"rm -Rf target"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanXie123/forum_nodeJS.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RyanXie123/forum_nodeJS/issues"
+  },
+  "homepage": "https://github.com/RyanXie123/forum_nodeJS#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015-node4": "^2.1.1",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "dependencies": {
+    "project-core": "^2.1.0"
+  }
+}
