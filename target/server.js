@@ -10,7 +10,7 @@ var _projectCore2 = _interopRequireDefault(_projectCore);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const $ = global.$ = new ProgectCore();
+const $ = global.$ = new _projectCore2.default();
 
 //加载配置文件
 $.init.add(done => {
@@ -29,8 +29,6 @@ $.init(err => {
         console.log(err);
         process.exit(-1);
     } else {
-        console.log('hello [env=%s]', $.env);
+        console.log('hello123 [env=%s]', $.env);
     }
 });
-
-///
